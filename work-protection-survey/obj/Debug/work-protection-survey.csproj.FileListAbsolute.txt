@@ -6,3 +6,4 @@ D:\Programare\CSharp\work-protection-survey\work-protection-survey\obj\Debug\wor
 D:\Programare\CSharp\work-protection-survey\work-protection-survey\obj\Debug\work-protection-survey.csproj.GenerateResource.cache
 D:\Programare\CSharp\work-protection-survey\work-protection-survey\obj\Debug\work-protection-survey.exe
 D:\Programare\CSharp\work-protection-survey\work-protection-survey\obj\Debug\work-protection-survey.pdb
+D:\Programare\CSharp\work-protection-survey\work-protection-survey\obj\Debug\work_protection_survey.Form1.resources
