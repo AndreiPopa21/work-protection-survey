@@ -15,16 +15,35 @@ namespace work_protection_survey
         public Form1()
         {
             InitializeComponent();
+
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Login.SetForm(this);
+            SetClickEvents();
+            SetMouseDownEvents();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SetMouseDownEvents()
         {
-
+            this.MouseDown += Login.DragWindow;
+            topbarPanel.MouseDown += Login.DragWindow;
+            conectareLabel.MouseDown += Login.DragWindow;
+            userPicture.MouseDown += Login.DragWindow;
+            lockPicture.MouseDown += Login.DragWindow;
+        }
+        private void SetClickEvents()
+        {
+            exitButton.Click += Login.ExitApplication;
+            minimizeButton.Click += Login.MinimizeApplication;
+            connectButton.Click += Login.Connect;
+            userTextBox.Click += Login.EmptyTextBox;
+            passwordTextBox.Click += Login.EmptyTextBox;
+            userTextBox.MouseLeave += Login.FillDefaultText;
+            passwordTextBox.MouseLeave += Login.FillDefaultText;
         }
     }
 }

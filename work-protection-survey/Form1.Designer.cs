@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.topbarPanel = new System.Windows.Forms.Panel();
-            this.minimizeButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.minimizeButton = new System.Windows.Forms.Button();
             this.conectareLabel = new System.Windows.Forms.Label();
-            this.loginButton = new System.Windows.Forms.Button();
+            this.connectButton = new System.Windows.Forms.Button();
             this.userUnderline = new System.Windows.Forms.Panel();
             this.passwordUnderline = new System.Windows.Forms.Panel();
             this.userTextBox = new System.Windows.Forms.TextBox();
@@ -52,34 +52,33 @@
             this.topbarPanel.Size = new System.Drawing.Size(550, 32);
             this.topbarPanel.TabIndex = 0;
             // 
-            // minimizeButton
-            // 
-            this.minimizeButton.FlatAppearance.BorderSize = 0;
-            this.minimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizeButton.ForeColor = System.Drawing.Color.White;
-            this.minimizeButton.Location = new System.Drawing.Point(480, 0);
-            this.minimizeButton.Name = "minimizeButton";
-            this.minimizeButton.Size = new System.Drawing.Size(70, 32);
-            this.minimizeButton.TabIndex = 1;
-            this.minimizeButton.Text = "X";
-            this.minimizeButton.UseVisualStyleBackColor = true;
-            this.minimizeButton.Click += new System.EventHandler(this.button1_Click);
-            // 
             // exitButton
             // 
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(410, 0);
+            this.exitButton.Location = new System.Drawing.Point(480, 0);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(70, 32);
-            this.exitButton.TabIndex = 2;
-            this.exitButton.Text = "_";
+            this.exitButton.TabIndex = 1;
+            this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = true;
+            // 
+            // minimizeButton
+            // 
+            this.minimizeButton.FlatAppearance.BorderSize = 0;
+            this.minimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeButton.ForeColor = System.Drawing.Color.White;
+            this.minimizeButton.Location = new System.Drawing.Point(410, 0);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(70, 32);
+            this.minimizeButton.TabIndex = 2;
+            this.minimizeButton.Text = "_";
+            this.minimizeButton.UseVisualStyleBackColor = true;
             // 
             // conectareLabel
             // 
@@ -92,19 +91,19 @@
             this.conectareLabel.TabIndex = 3;
             this.conectareLabel.Text = "Conectare administrator";
             // 
-            // loginButton
+            // connectButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.loginButton.FlatAppearance.BorderSize = 0;
-            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(190, 398);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(170, 50);
-            this.loginButton.TabIndex = 4;
-            this.loginButton.Text = "Conectare";
-            this.loginButton.UseVisualStyleBackColor = false;
+            this.connectButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.connectButton.FlatAppearance.BorderSize = 0;
+            this.connectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.connectButton.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connectButton.ForeColor = System.Drawing.Color.White;
+            this.connectButton.Location = new System.Drawing.Point(190, 398);
+            this.connectButton.Name = "connectButton";
+            this.connectButton.Size = new System.Drawing.Size(170, 50);
+            this.connectButton.TabIndex = 4;
+            this.connectButton.Text = "Conectare";
+            this.connectButton.UseVisualStyleBackColor = false;
             // 
             // userUnderline
             // 
@@ -178,10 +177,10 @@
             this.Controls.Add(this.userTextBox);
             this.Controls.Add(this.passwordUnderline);
             this.Controls.Add(this.userUnderline);
-            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.connectButton);
             this.Controls.Add(this.conectareLabel);
-            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.minimizeButton);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.topbarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -200,10 +199,10 @@
         #endregion
 
         private System.Windows.Forms.Panel topbarPanel;
-        private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.Label conectareLabel;
-        public System.Windows.Forms.Button loginButton;
+        public System.Windows.Forms.Button connectButton;
         private System.Windows.Forms.Panel userUnderline;
         private System.Windows.Forms.Panel passwordUnderline;
         private System.Windows.Forms.TextBox userTextBox;
