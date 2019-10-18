@@ -57,10 +57,15 @@ namespace work_protection_survey
                     //MessageBox.Show(CreateMD5(s));
                     if (CreateMD5(s).Equals(hash))
                     {
-                        MessageBox.Show("Felicitari");
-                        //ExitApplication(sender,e);
-                        break;
+                        MessageBox.Show("Felicitari, te-ai conectat",
+                            "Conexiune reusita",MessageBoxButtons.OK);
                     }
+                    else
+                    {
+                        MessageBox.Show("Nu ai introdus parola corecta", "Conectare esuata",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    break;
                 }
             }
         }
