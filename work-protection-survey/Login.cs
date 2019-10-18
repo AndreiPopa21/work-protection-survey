@@ -13,6 +13,7 @@ namespace work_protection_survey
     class Login
     {
         private static Form loginForm;
+        private static readonly string hash = "ed9e5e06101846de5a9ff71685e51bc3";
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -47,12 +48,37 @@ namespace work_protection_survey
         }
         public static void Connect(object sender, EventArgs e)
         {
-
+            Control.ControlCollection controls = loginForm.Controls;
+            foreach(Control c in controls)
+            {
+                if(c is TextBox && c.Name.Equals("passwordTextBox"))
+                {
+                    string s = ((TextBox)c).Text;
+                    //MessageBox.Show(CreateMD5(s));
+                    if (CreateMD5(s).Equals(hash))
+                    {
+                        MessageBox.Show("Felicitari");
+                        //ExitApplication(sender,e);
+                        break;
+                    }
+                }
+            }
         }
         public static void EmptyTextBox(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
-            tb.Text = "";
+            switch (tb.Name)
+            {
+                case "userTextBox":
+                    if (tb.Text.Equals("Utilizator"))
+                        tb.Text = "";
+                    break;
+                case "passwordTextBox":
+                    if (tb.Text.Equals("Parola"))
+                        tb.Text = "";
+                    break;
+            }
+            
         }
 
         public static void FillDefaultText(object sender, EventArgs e)
@@ -71,6 +97,24 @@ namespace work_protection_survey
                     default:
                         break;
                 }
+            }
+        }
+
+        public static string CreateMD5(string input)
+        {
+            // Use input string to calculate MD5 hash
+            using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
+            {
+                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                // Convert the byte array to hexadecimal string
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("x2"));
+                }
+                return sb.ToString();
             }
         }
     }

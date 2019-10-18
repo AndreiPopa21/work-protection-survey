@@ -42,8 +42,8 @@ namespace work_protection_survey
             connectButton.Click += Login.Connect;
             userTextBox.Click += Login.EmptyTextBox;
             passwordTextBox.Click += Login.EmptyTextBox;
-            userTextBox.MouseLeave += Login.FillDefaultText;
-            passwordTextBox.MouseLeave += Login.FillDefaultText;
+            userTextBox.Leave += Login.FillDefaultText;
+            passwordTextBox.Leave += Login.FillDefaultText;
         }
     }
 }

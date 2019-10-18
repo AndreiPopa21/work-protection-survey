@@ -40,6 +40,7 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.userPicture = new System.Windows.Forms.PictureBox();
             this.lockPicture = new System.Windows.Forms.PictureBox();
+            this.copyrightsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockPicture)).BeginInit();
             this.SuspendLayout();
@@ -143,6 +144,7 @@
             this.passwordTextBox.ForeColor = System.Drawing.Color.White;
             this.passwordTextBox.Location = new System.Drawing.Point(168, 313);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(225, 28);
             this.passwordTextBox.TabIndex = 8;
             this.passwordTextBox.Text = "Parola";
@@ -165,12 +167,24 @@
             this.lockPicture.TabIndex = 10;
             this.lockPicture.TabStop = false;
             // 
+            // copyrightsLabel
+            // 
+            this.copyrightsLabel.AutoSize = true;
+            this.copyrightsLabel.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyrightsLabel.ForeColor = System.Drawing.Color.White;
+            this.copyrightsLabel.Location = new System.Drawing.Point(309, 491);
+            this.copyrightsLabel.Name = "copyrightsLabel";
+            this.copyrightsLabel.Size = new System.Drawing.Size(227, 17);
+            this.copyrightsLabel.TabIndex = 11;
+            this.copyrightsLabel.Text = "copyrights© Stefan Popa 2019";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(550, 500);
+            this.ClientSize = new System.Drawing.Size(550, 520);
+            this.Controls.Add(this.copyrightsLabel);
             this.Controls.Add(this.lockPicture);
             this.Controls.Add(this.userPicture);
             this.Controls.Add(this.passwordTextBox);
@@ -209,6 +223,7 @@
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.PictureBox userPicture;
         private System.Windows.Forms.PictureBox lockPicture;
+        private System.Windows.Forms.Label copyrightsLabel;
     }
 }
 
