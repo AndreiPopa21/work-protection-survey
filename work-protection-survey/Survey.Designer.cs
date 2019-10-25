@@ -31,7 +31,10 @@
             this.topbarPanel = new System.Windows.Forms.Panel();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.bottombarPanel = new System.Windows.Forms.Panel();
+            this.copyrightsLabel = new System.Windows.Forms.Label();
             this.topbarPanel.SuspendLayout();
+            this.bottombarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topbarPanel
@@ -73,18 +76,41 @@
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = true;
             // 
+            // bottombarPanel
+            // 
+            this.bottombarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.bottombarPanel.Controls.Add(this.copyrightsLabel);
+            this.bottombarPanel.Location = new System.Drawing.Point(-2, 460);
+            this.bottombarPanel.Name = "bottombarPanel";
+            this.bottombarPanel.Size = new System.Drawing.Size(900, 40);
+            this.bottombarPanel.TabIndex = 4;
+            // 
+            // copyrightsLabel
+            // 
+            this.copyrightsLabel.AutoSize = true;
+            this.copyrightsLabel.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyrightsLabel.ForeColor = System.Drawing.Color.White;
+            this.copyrightsLabel.Location = new System.Drawing.Point(309, 11);
+            this.copyrightsLabel.Name = "copyrightsLabel";
+            this.copyrightsLabel.Size = new System.Drawing.Size(275, 20);
+            this.copyrightsLabel.TabIndex = 12;
+            this.copyrightsLabel.Text = "copyrights© Stefan Popa 2019";
+            // 
             // Survey
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(900, 500);
+            this.Controls.Add(this.bottombarPanel);
             this.Controls.Add(this.topbarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Survey";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.topbarPanel.ResumeLayout(false);
+            this.bottombarPanel.ResumeLayout(false);
+            this.bottombarPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -94,5 +120,7 @@
         private System.Windows.Forms.Panel topbarPanel;
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Panel bottombarPanel;
+        private System.Windows.Forms.Label copyrightsLabel;
     }
 }

@@ -174,7 +174,7 @@
             this.copyrightsLabel.AutoSize = true;
             this.copyrightsLabel.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyrightsLabel.ForeColor = System.Drawing.Color.White;
-            this.copyrightsLabel.Location = new System.Drawing.Point(255, 10);
+            this.copyrightsLabel.Location = new System.Drawing.Point(130, 13);
             this.copyrightsLabel.Name = "copyrightsLabel";
             this.copyrightsLabel.Size = new System.Drawing.Size(275, 20);
             this.copyrightsLabel.TabIndex = 11;
