@@ -41,8 +41,10 @@
             this.userPicture = new System.Windows.Forms.PictureBox();
             this.lockPicture = new System.Windows.Forms.PictureBox();
             this.copyrightsLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockPicture)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // topbarPanel
@@ -170,21 +172,31 @@
             // copyrightsLabel
             // 
             this.copyrightsLabel.AutoSize = true;
-            this.copyrightsLabel.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyrightsLabel.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyrightsLabel.ForeColor = System.Drawing.Color.White;
-            this.copyrightsLabel.Location = new System.Drawing.Point(309, 491);
+            this.copyrightsLabel.Location = new System.Drawing.Point(255, 10);
             this.copyrightsLabel.Name = "copyrightsLabel";
-            this.copyrightsLabel.Size = new System.Drawing.Size(227, 17);
+            this.copyrightsLabel.Size = new System.Drawing.Size(275, 20);
             this.copyrightsLabel.TabIndex = 11;
             this.copyrightsLabel.Text = "copyrights© Stefan Popa 2019";
+            this.copyrightsLabel.Click += new System.EventHandler(this.copyrightsLabel_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.panel1.Controls.Add(this.copyrightsLabel);
+            this.panel1.Location = new System.Drawing.Point(0, 478);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(550, 40);
+            this.panel1.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(550, 520);
-            this.Controls.Add(this.copyrightsLabel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lockPicture);
             this.Controls.Add(this.userPicture);
             this.Controls.Add(this.passwordTextBox);
@@ -205,6 +217,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockPicture)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +238,7 @@
         private System.Windows.Forms.PictureBox userPicture;
         private System.Windows.Forms.PictureBox lockPicture;
         private System.Windows.Forms.Label copyrightsLabel;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
