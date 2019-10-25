@@ -21,12 +21,21 @@ namespace work_protection_survey
         {
             MainMenu.SetForm(this);
             SetClickEvents();
+            SetMouseDownEvents();
         }
 
         private void SetClickEvents()
         {
             exitButton.Click += MainMenu.ExitApplication;
             minimizeButton.Click += MainMenu.MinimizeApplication;
+        }
+
+        private void SetMouseDownEvents()
+        {
+            this.MouseDown += MainMenu.DragWindow;
+            topbarPanel.MouseDown += MainMenu.DragWindow;
+            bottombarPanel.MouseDown += MainMenu.DragWindow;
+            copyrightsLabel.MouseDown += MainMenu.DragWindow;
         }
     }
 }

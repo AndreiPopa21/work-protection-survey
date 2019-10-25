@@ -41,10 +41,10 @@
             this.userPicture = new System.Windows.Forms.PictureBox();
             this.lockPicture = new System.Windows.Forms.PictureBox();
             this.copyrightsLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.bottombarPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockPicture)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.bottombarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topbarPanel
@@ -181,14 +181,14 @@
             this.copyrightsLabel.Text = "copyrights© Stefan Popa 2019";
             this.copyrightsLabel.Click += new System.EventHandler(this.copyrightsLabel_Click);
             // 
-            // panel1
+            // bottombarPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.panel1.Controls.Add(this.copyrightsLabel);
-            this.panel1.Location = new System.Drawing.Point(0, 478);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(550, 40);
-            this.panel1.TabIndex = 1;
+            this.bottombarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.bottombarPanel.Controls.Add(this.copyrightsLabel);
+            this.bottombarPanel.Location = new System.Drawing.Point(0, 478);
+            this.bottombarPanel.Name = "bottombarPanel";
+            this.bottombarPanel.Size = new System.Drawing.Size(550, 40);
+            this.bottombarPanel.TabIndex = 1;
             // 
             // Form1
             // 
@@ -196,7 +196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(550, 520);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.bottombarPanel);
             this.Controls.Add(this.lockPicture);
             this.Controls.Add(this.userPicture);
             this.Controls.Add(this.passwordTextBox);
@@ -217,8 +217,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lockPicture)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.bottombarPanel.ResumeLayout(false);
+            this.bottombarPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,7 +238,7 @@
         private System.Windows.Forms.PictureBox userPicture;
         private System.Windows.Forms.PictureBox lockPicture;
         private System.Windows.Forms.Label copyrightsLabel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel bottombarPanel;
     }
 }
 

@@ -34,6 +34,8 @@ namespace work_protection_survey
             conectareLabel.MouseDown += Login.DragWindow;
             userPicture.MouseDown += Login.DragWindow;
             lockPicture.MouseDown += Login.DragWindow;
+            copyrightsLabel.MouseDown += Login.DragWindow;
+            bottombarPanel.MouseDown += Login.DragWindow;
         }
         private void SetClickEvents()
         {
@@ -44,6 +46,7 @@ namespace work_protection_survey
             passwordTextBox.Click += Login.EmptyTextBox;
             userTextBox.Leave += Login.FillDefaultText;
             passwordTextBox.Leave += Login.FillDefaultText;
+            
         }
 
         private void copyrightsLabel_Click(object sender, EventArgs e)
