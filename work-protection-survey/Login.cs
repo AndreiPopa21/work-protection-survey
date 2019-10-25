@@ -59,6 +59,9 @@ namespace work_protection_survey
                     {
                         MessageBox.Show("Felicitari, te-ai conectat",
                             "Conexiune reusita",MessageBoxButtons.OK);
+                        MenuForm mf = new MenuForm();
+                        loginForm.Hide();
+                        mf.Show();
                     }
                     else
                     {
