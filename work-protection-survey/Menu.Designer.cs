@@ -38,7 +38,7 @@
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.startLabel = new System.Windows.Forms.Label();
-            this.connectButton = new System.Windows.Forms.Button();
+            this.startButton = new System.Windows.Forms.Button();
             this.topbarPanel.SuspendLayout();
             this.bottombarPanel.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +101,6 @@
             this.copyrightsLabel.Size = new System.Drawing.Size(275, 20);
             this.copyrightsLabel.TabIndex = 12;
             this.copyrightsLabel.Text = "copyrights© Stefan Popa 2019";
-            this.copyrightsLabel.Click += new System.EventHandler(this.copyrightsLabel_Click);
             // 
             // firstNameUnderline
             // 
@@ -156,19 +155,19 @@
             this.startLabel.TabIndex = 11;
             this.startLabel.Text = "Pornește testul";
             // 
-            // connectButton
+            // startButton
             // 
-            this.connectButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
-            this.connectButton.FlatAppearance.BorderSize = 0;
-            this.connectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.connectButton.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connectButton.ForeColor = System.Drawing.Color.White;
-            this.connectButton.Location = new System.Drawing.Point(211, 400);
-            this.connectButton.Name = "connectButton";
-            this.connectButton.Size = new System.Drawing.Size(137, 50);
-            this.connectButton.TabIndex = 12;
-            this.connectButton.Text = "Start";
-            this.connectButton.UseVisualStyleBackColor = false;
+            this.startButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(137)))), ((int)(((byte)(218)))));
+            this.startButton.FlatAppearance.BorderSize = 0;
+            this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startButton.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startButton.ForeColor = System.Drawing.Color.White;
+            this.startButton.Location = new System.Drawing.Point(211, 400);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(137, 50);
+            this.startButton.TabIndex = 12;
+            this.startButton.Text = "Start";
+            this.startButton.UseVisualStyleBackColor = false;
             // 
             // MenuForm
             // 
@@ -176,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(550, 520);
-            this.Controls.Add(this.connectButton);
+            this.Controls.Add(this.startButton);
             this.Controls.Add(this.startLabel);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.firstNameTextBox);
@@ -209,6 +208,6 @@
         private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.Label startLabel;
-        public System.Windows.Forms.Button connectButton;
+        public System.Windows.Forms.Button startButton;
     }
 }

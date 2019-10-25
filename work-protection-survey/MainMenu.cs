@@ -75,6 +75,9 @@ namespace work_protection_survey
             }
         }
 
-
+        public static void StartTest(object sender, EventArgs e)
+        {
+            MessageBox.Show("Start");
+        }
     }
 }

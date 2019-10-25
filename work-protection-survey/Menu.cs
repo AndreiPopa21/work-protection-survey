@@ -32,6 +32,7 @@ namespace work_protection_survey
             lastNameTextBox.Click += MainMenu.EmptyTextBox;
             firstNameTextBox.Leave += MainMenu.FillDefaultText;
             lastNameTextBox.Leave += MainMenu.FillDefaultText;
+            startButton.Click += MainMenu.StartTest;
         }
 
         private void SetMouseDownEvents()
