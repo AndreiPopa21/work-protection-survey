@@ -57,11 +57,12 @@ namespace work_protection_survey
                     //MessageBox.Show(CreateMD5(s));
                     if (CreateMD5(s).Equals(hash))
                     {
-                        MessageBox.Show("Felicitari, te-ai conectat",
-                            "Conexiune reusita",MessageBoxButtons.OK);
+                      /*  MessageBox.Show("Felicitari, te-ai conectat",
+                            "Conexiune reusita",MessageBoxButtons.OK);*/
                         MenuForm mf = new MenuForm();
-                        loginForm.Hide();
                         mf.Show();
+                        loginForm.Hide();
+                       
                     }
                     else
                     {

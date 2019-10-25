@@ -88,7 +88,7 @@
             this.conectareLabel.AutoSize = true;
             this.conectareLabel.Font = new System.Drawing.Font("Verdana", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conectareLabel.ForeColor = System.Drawing.Color.White;
-            this.conectareLabel.Location = new System.Drawing.Point(32, 97);
+            this.conectareLabel.Location = new System.Drawing.Point(32, 100);
             this.conectareLabel.Name = "conectareLabel";
             this.conectareLabel.Size = new System.Drawing.Size(482, 46);
             this.conectareLabel.TabIndex = 3;
@@ -101,7 +101,7 @@
             this.connectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.connectButton.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectButton.ForeColor = System.Drawing.Color.White;
-            this.connectButton.Location = new System.Drawing.Point(190, 398);
+            this.connectButton.Location = new System.Drawing.Point(190, 400);
             this.connectButton.Name = "connectButton";
             this.connectButton.Size = new System.Drawing.Size(170, 50);
             this.connectButton.TabIndex = 4;
@@ -111,17 +111,17 @@
             // userUnderline
             // 
             this.userUnderline.BackColor = System.Drawing.Color.White;
-            this.userUnderline.Location = new System.Drawing.Point(155, 261);
+            this.userUnderline.Location = new System.Drawing.Point(155, 265);
             this.userUnderline.Name = "userUnderline";
-            this.userUnderline.Size = new System.Drawing.Size(250, 2);
+            this.userUnderline.Size = new System.Drawing.Size(250, 3);
             this.userUnderline.TabIndex = 5;
             // 
             // passwordUnderline
             // 
             this.passwordUnderline.BackColor = System.Drawing.Color.White;
-            this.passwordUnderline.Location = new System.Drawing.Point(155, 344);
+            this.passwordUnderline.Location = new System.Drawing.Point(155, 345);
             this.passwordUnderline.Name = "passwordUnderline";
-            this.passwordUnderline.Size = new System.Drawing.Size(250, 2);
+            this.passwordUnderline.Size = new System.Drawing.Size(250, 3);
             this.passwordUnderline.TabIndex = 6;
             // 
             // userTextBox
@@ -131,7 +131,7 @@
             this.userTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userTextBox.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userTextBox.ForeColor = System.Drawing.Color.White;
-            this.userTextBox.Location = new System.Drawing.Point(168, 232);
+            this.userTextBox.Location = new System.Drawing.Point(168, 230);
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(225, 28);
             this.userTextBox.TabIndex = 7;
@@ -144,7 +144,7 @@
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.ForeColor = System.Drawing.Color.White;
-            this.passwordTextBox.Location = new System.Drawing.Point(168, 313);
+            this.passwordTextBox.Location = new System.Drawing.Point(168, 310);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(225, 28);
@@ -179,7 +179,6 @@
             this.copyrightsLabel.Size = new System.Drawing.Size(275, 20);
             this.copyrightsLabel.TabIndex = 11;
             this.copyrightsLabel.Text = "copyrights© Stefan Popa 2019";
-            this.copyrightsLabel.Click += new System.EventHandler(this.copyrightsLabel_Click);
             // 
             // bottombarPanel
             // 

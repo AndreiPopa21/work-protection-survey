@@ -48,10 +48,5 @@ namespace work_protection_survey
             passwordTextBox.Leave += Login.FillDefaultText;
             
         }
-
-        private void copyrightsLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

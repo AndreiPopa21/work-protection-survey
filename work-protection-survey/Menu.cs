@@ -36,6 +36,12 @@ namespace work_protection_survey
             topbarPanel.MouseDown += MainMenu.DragWindow;
             bottombarPanel.MouseDown += MainMenu.DragWindow;
             copyrightsLabel.MouseDown += MainMenu.DragWindow;
+            startLabel.MouseDown += MainMenu.DragWindow;
+        }
+
+        private void copyrightsLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
