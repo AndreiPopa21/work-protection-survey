@@ -28,6 +28,10 @@ namespace work_protection_survey
         {
             exitButton.Click += MainMenu.ExitApplication;
             minimizeButton.Click += MainMenu.MinimizeApplication;
+            firstNameTextBox.Click += MainMenu.EmptyTextBox;
+            lastNameTextBox.Click += MainMenu.EmptyTextBox;
+            firstNameTextBox.Leave += MainMenu.FillDefaultText;
+            lastNameTextBox.Leave += MainMenu.FillDefaultText;
         }
 
         private void SetMouseDownEvents()

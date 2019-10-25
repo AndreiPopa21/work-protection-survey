@@ -22,7 +22,6 @@ namespace work_protection_survey
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
-
         public static void DragWindow(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -31,7 +30,6 @@ namespace work_protection_survey
                 SendMessage(loginForm.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-
         public static void SetForm(Form form)
         {
             loginForm = form;
@@ -86,10 +84,8 @@ namespace work_protection_survey
                     if (tb.Text.Equals("Parola"))
                         tb.Text = "";
                     break;
-            }
-            
+            }     
         }
-
         public static void FillDefaultText(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
@@ -108,7 +104,6 @@ namespace work_protection_survey
                 }
             }
         }
-
         public static string CreateMD5(string input)
         {
             // Use input string to calculate MD5 hash
@@ -126,5 +121,12 @@ namespace work_protection_survey
                 return sb.ToString();
             }
         }
+        public static void RobotFill(Control c)
+        {
+            ((TextBox)c).Text = "origami";
+        }
+    
+        public static void HighlightUnderline(object sender, EventArgs e) { ((Panel)sender).ForeColor = Color.YellowGreen;}
+        public static void UnhighlightUnderline(object sender, EventArgs e) { ((Panel)sender).ForeColor= Color.White; }
     }
 }

@@ -18,7 +18,6 @@ namespace work_protection_survey
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
-
         public static void DragWindow(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -42,5 +41,40 @@ namespace work_protection_survey
             //Minimize application
             menuForm.WindowState = FormWindowState.Minimized;
         }
+        public static void FillDefaultText(object sender, EventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            if (String.IsNullOrEmpty(tb.Text) || String.IsNullOrWhiteSpace(tb.Text))
+            {
+                switch (tb.Name)
+                {
+                    case "firstNameTextBox":
+                        tb.Text = "Prenume";
+                        break;
+                    case "lastNameTextBox":
+                        tb.Text = "Nume";
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        public static void EmptyTextBox(object sender, EventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            switch (tb.Name)
+            {
+                case "firstNameTextBox":
+                    if (tb.Text.Equals("Nume"))
+                        tb.Text = "";
+                    break;
+                case "lastNameTextBox":
+                    if (tb.Text.Equals("Prenume"))
+                        tb.Text = "";
+                    break;
+            }
+        }
+
+
     }
 }
